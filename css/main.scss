@@ -35,7 +35,6 @@ html {
 }
 
 body {
-  position: relative;
   background: #111;
   padding-left: 35rem;
 }
@@ -352,6 +351,7 @@ header {
   }
 
   header {
+    width: 50vw;
     left: -100%;
     &.active {
       left: 0;
@@ -362,7 +362,7 @@ header {
     position: fixed;
     right: 2rem;
     top: 2rem;
-    z-index: 100;
+    z-index: 1000;
   }
 
   .home {
@@ -381,5 +381,8 @@ header {
 @media screen and (max-width: 768px) {
   html {
     font-size: 50%;
+  }
+  header {
+    width: 100vw;
   }
 }

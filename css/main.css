@@ -37,7 +37,6 @@ html::-webkit-scrollbar-track {
 }
 
 body {
-  position: relative;
   background: #111;
   padding-left: 35rem;
 }
@@ -367,6 +366,7 @@ header .navbar ul li a:hover {
   }
 
   header {
+    width: 50vw;
     left: -100%;
   }
   header.active {
@@ -378,7 +378,7 @@ header .navbar ul li a:hover {
     position: fixed;
     right: 2rem;
     top: 2rem;
-    z-index: 100;
+    z-index: 1000;
   }
 
   .home {
@@ -392,5 +392,9 @@ header .navbar ul li a:hover {
 @media screen and (max-width: 768px) {
   html {
     font-size: 50%;
+  }
+
+  header {
+    width: 100vw;
   }
 }/*# sourceMappingURL=main.css.map */
